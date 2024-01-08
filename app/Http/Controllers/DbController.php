@@ -48,7 +48,7 @@ class DbController extends Controller
         $userId = $req->userId;
         $password = $req->password;
 
-        
+        //バリデーション処理に変更する
         if(!isset($userId) || !isset($password)) {
             return redirect("/");  
         }
