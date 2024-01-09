@@ -20,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::post('/login',[DbController::class, 'login']); //ログイン情報のチェック
+Route::get('/db/book_show',[DbController::class,'bookShow']);
+Route::get('db/book_create',[DbController::class,'bookCreate']);

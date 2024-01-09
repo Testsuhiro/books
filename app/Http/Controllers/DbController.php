@@ -62,4 +62,14 @@ class DbController extends Controller
         return view('db.result');
         }
     }
+
+    public function bookShow()
+    {
+        return view('db.book_show');
+    }
+
+    public function bookCreate()
+    {
+        return view('db.book_create');
+    }
 }
