@@ -59,7 +59,7 @@ class DbController extends Controller
 
         if($userId === $validUser && $password === $validPass){
 
-        return view('db.result');
+        return view('db.index');
         }
     }
 
