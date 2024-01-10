@@ -63,13 +63,46 @@ class DbController extends Controller
         }
     }
 
-    public function bookShow()
+    //書籍一覧表示
+    public function booKShow()
     {
-        return view('db.book_show');
+        $data = [
+            'records' => Book::all()
+        ];
+        return view('db.book_show', $data);
     }
 
-    public function bookCreate()
+    //書籍の登録画面
+    public function booKCreate()
     {
         return view('db.book_create');
+    }
+
+
+    //書籍登録処理、確認画面表示
+    public function bookResult(Request $req)
+    {
+        //モデルのインスタンスを生成
+        $book = new Book();
+
+        //フォームのデータをプロパティに代入
+        $book->book_id = $req->book_id;
+        $book->book_name = $req->book_name;
+        $book->book_writer = $req->book_writer;
+        $book->book_pub = $req->book_pub;
+        $book->book_price = $req->book_price;
+
+        //テーブルにデータを保存
+        $book->save();
+
+        //登録したデータをビューに渡し、表示
+        $data = [
+            'book_id' =>$req->book_id,
+            'book_name' => $req->book_name,
+            'book_writer' => $req->book_writer,
+            'book_pub' => $req->book_pub,
+            'book_price' => $req->book_price
+        ];
+        return view('db.book_result');
     }
 }
