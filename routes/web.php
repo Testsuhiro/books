@@ -23,3 +23,4 @@ Route::post('/login',[DbController::class, 'login']);               //ログイ�
 Route::get('/db/book_show',[DbController::class,'bookShow']);       //書籍の一覧表示
 Route::get('/db/book_create',[DbController::class,'bookCreate']);   //書籍の登録
 Route::post('db/book_result',[DbController::class,'bookResult']);     //登録処理、確認
+Route::post('db/book_review',[DbController::class,'bookReview']);   //レビュー一覧表示
