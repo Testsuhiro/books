@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>書籍の登録</h1>
-    <form action="db/book_create" method="post"></form>
+    <form action="db/book_result" method="post"></form>
     @csrf
     ISBN<br>
     <input type="number" name="isbn" id="isbn" class="form-control" required><br>
@@ -26,6 +26,6 @@
     価格<br>
     <input type="number" name="price" id="price" class="form-control" required><br>
 
-    <input type="submit" value="更新" class="btn-edit">
+    <input type="submit" value="登録" class="btn-edit">
 </body>
 </html>
