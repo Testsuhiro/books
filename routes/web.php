@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/login',[DbController::class, 'login']); //ログイン情報のチェック
-Route::get('/db/book_show',[DbController::class,'bookShow']);
-Route::get('db/book_create',[DbController::class,'bookCreate']);
+Route::post('/login',[DbController::class, 'login']);               //ログイン情報のチェック
+Route::get('/db/book_show',[DbController::class,'bookShow']);       //書籍の一覧表示
+Route::get('/db/book_create',[DbController::class,'bookCreate']);   //書籍の登録
+Route::post('db/book_result',[DbController::class,'bookResult']);     //登録処理、確認
