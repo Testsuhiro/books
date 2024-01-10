@@ -106,4 +106,14 @@ class DbController extends Controller
         ];
         return view('db.book_result');
     }
+
+    //レビューの一覧表示
+    public function bookReview()
+    {
+        $data = [
+            //booksとreviewsのテーブルを内部結合したデータの全件表示
+            'relations' => Review::all()
+        ];
+        return view('db.book_review', $data);
+    }
 }
