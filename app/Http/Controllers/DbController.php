@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Userid;
+use App\Models\Employee;
 use App\Models\Book;
 
 class DbController extends Controller
 {
     /*public function login(Request $req)
     { 
-        $validUser = Userid::select('user_id')->get();
-        $validPass = Userid::select('pass')->get();
+        $validUser = Employee::select('user_id')->get();
+        $validPass = Employee::select('pass')->get();
 
         
         /*ログイン情報のチェック
