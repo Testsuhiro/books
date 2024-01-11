@@ -16,7 +16,7 @@ use App\Http\Controllers\DbController;
 
 Route::get('/', function () {
     //return view('index');
-    return view('index');
+    return view('login');
 });
 
 Route::post('/login',[DbController::class, 'login']);               //ログイン情報のチェック
