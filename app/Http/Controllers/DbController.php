@@ -39,13 +39,23 @@ class DbController extends Controller
         }  
     }*/
 
-    //ログイン機能テスト
+    //ログイン機能(node.jsが機能しなかったとき用)
 
     public function login(Request $req)
     {
-        $validUser = "okawa";
-        $validPass = "jel9102";
+        $validUser1 = "User01";
+        $validPass1 = "pass01";
 
+        $validUser2 = "User02";
+        $validPass2 = "pass02";
+
+        $validUser3 = "User03";
+        $validPass3 = "pass03";
+
+        $validUser4 = "User04";
+        $validPass4 = "pass04";
+
+        
         $userId = $req->userId;
         $password = $req->password;
 
@@ -58,9 +68,18 @@ class DbController extends Controller
             return redirect("/");  
         }
 
-        if($userId === $validUser && $password === $validPass){
+        if($userId === $validUser1 && $password1 === $validPass){
+            return view('db.index');
 
-        return view('db.index');
+        } else if($userId === $validUser2 && $password2 === $validPass) {
+            return view('db.index');
+
+        } else if($userId === $validUser3 && $password3 === $validPass) {
+            return view('db.index');
+
+        } else if($userId === $validUser4 && $password4 === $validPass) {
+            return view('db.index');
+
         }
     }
 

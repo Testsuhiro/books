@@ -10,6 +10,7 @@ class Authenticate extends Middleware
     /**
      * Get the path the user should be redirected to when they are not authenticated.
      */
+    //ログインをせずにログイン後の画面に直接アクセスした際は、ログイン画面にリダイレクト
     protected function redirectTo(Request $request): ?string
     {
         return $request->expectsJson() ? null : route('login');

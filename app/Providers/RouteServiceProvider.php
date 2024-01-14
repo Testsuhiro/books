@@ -18,6 +18,9 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/home';
+    //追加
+    //URLを格納した定数?
+    public const INDEX = '/db/book_index';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.

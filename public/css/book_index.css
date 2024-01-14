@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+    background-image: url(/img/book_shelf4.avif);
+    background-size: cover;
+}
+
+.title {
+    border-bottom: 2px solid;
+}
+.menu {
+    border: 2px solid;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    margin-top: 240px;
+    background-color: white;
+    box-shadow: 10px 10px 10px black;
+}
+
+li {
+    font-size: 30px;
+    margin-right: 60px;
+    list-style: none;
+}
+
+.item:hover {
+    color:rgb(171, 124, 218);
+}
+
+.a {
+    margin-left: 320px;
+}
