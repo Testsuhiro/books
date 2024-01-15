@@ -1,8 +1,77 @@
 @charset "utf-8";
 
+.menu {
+    padding: 20px;
+}
+
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: #fff;
+    background-image: url(/image/book_shelf4.avif);
     text-align: center;
-    background-image: url(/img/book_shelf4.avif);
+    font-size: 130px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    margin-bottom: unset;
+    text-align: right;
+}
+
+.item1 {
+    background-color: #6498a0;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.item1:hover {
+    background-color: #1e6880;
+}
+
+.item2 {
+    background-color: #a3694d;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.item2:hover {
+    background-color: #d8c8b6;
+}
+
+footer {
+    background-image: url(/image/book_shelf4.avif);
+    height: 100px;
+    margin-top: 340px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* body {
+    text-align: center;
+    background-image: url(/image/book_shelf4.avif);
     background-size: cover;
 }
 
@@ -25,10 +94,24 @@ li {
     list-style: none;
 }
 
-.item:hover {
+.item1 {
+    font-size: 20px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.item1:hover {
+    color:rgb(171, 124, 218);
+}
+
+.item2 {
+    font-size: 20px;
+    margin-right: 50px;
+}
+.item2:hover {
     color:rgb(171, 124, 218);
 }
 
 .a {
     margin-left: 320px;
-}
+} */
